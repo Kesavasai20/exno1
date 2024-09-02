@@ -33,7 +33,7 @@ df
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/37ae9ec8-f65f-455d-b0f8-6d68b3c0526f)
-# remove the missing value in the salary with the particular row:
+## remove the missing value in the salary with the particular row:
 ```py
 df_clean=df.dropna(subset=['Salary'])
 df_clean
