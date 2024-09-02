@@ -23,7 +23,7 @@ STEP 5: Remove outliers using IQR
 
 STEP 6: Use zscore of to remove outliers
 
-### Coding and Output:
+## Coding and Output:
 # Cleaning process:
 ```py
 import pandas as pd
@@ -40,14 +40,14 @@ df_clean
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/2b53fd56-b00f-41ca-ac05-92f9524c2bf7)
-# the row with complete missing value then the row get deleted:
+## the row with complete missing value then the row get deleted:
 ```py
 df_clean_all=df.dropna(how='all')
 df_clean_all
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/1a885ac7-1487-4ec2-8eae-002fb4ce9fee)
-# delete the row which contain one missing value:
+## delete the row which contain one missing value:
 ```py
 df_cleaned_any=df.dropna(how='any')
 df_cleaned_any
@@ -85,21 +85,21 @@ df_filled
 ## Output:
 ![image](https://github.com/user-attachments/assets/f74065fa-fd82-44f2-a2c0-5bd481865a11)
 
-# forward fill where it will fill the before data set:
+## forward fill where it will fill the before data set:
 ```py
 df_ffill=df.fillna(method='ffill')
 df_ffill
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/132f1053-f3d3-4c31-bd93-15132d167b44)
-# where it will fill the back ward data into the current data:
+## where it will fill the back ward data into the current data:
 ```py
 df_bfill=df.bfill()
 df_bfill
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/ce0d2f47-efb1-49f8-b6c4-bcf3c37f8c90)
-# to find the mean of an age:
+## to find the mean of an age:
 ```py
 df_mean=df.fillna(df['Age'].mean())
 df_mean
@@ -107,7 +107,7 @@ df_mean
 ## Output:
 ![image](https://github.com/user-attachments/assets/c2c8d83a-ebec-458c-be47-a0b1fb0b095b)
 
-### Outlier detection and removal process:
+# Outlier detection and removal process:
 ```py
 import pandas as pd
 import seaborn as sns
