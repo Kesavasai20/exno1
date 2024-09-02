@@ -1,13 +1,16 @@
 # Exno:1
 Data Cleaning Process
 
-# AIM
+## Name: K KESAVA SAI
+## Register Number: 212223230105
+
+# AIM:
 To read the given data and perform data cleaning and save the cleaned data to a file.
 
-# Explanation
+# Explanation:
 Data cleaning is the process of preparing data for analysis by removing or modifying data that is incorrect ,incompleted , irrelevant , duplicated or improperly formatted. Data cleaning is not simply about erasing data ,but rather finding a way to maximize datasets accuracy without necessarily deleting the information.
 
-# Algorithm
+# Algorithm:
 STEP 1: Read the given Data
 
 STEP 2: Get the information about the data
@@ -20,8 +23,8 @@ STEP 5: Remove outliers using IQR
 
 STEP 6: Use zscore of to remove outliers
 
-### Coding and Output
-# Cleaning process
+### Coding and Output:
+# Cleaning process:
 ```py
 import pandas as pd
 data={'Name':['Alice','Bob','Charlie','Dave','Eve'],'Age':[25,32,None,41,28],'Salary':[50000,None,70000,90000,60000]}
@@ -30,21 +33,21 @@ df
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/37ae9ec8-f65f-455d-b0f8-6d68b3c0526f)
-# remove the missing value in the salary with the particular row
+# remove the missing value in the salary with the particular row:
 ```py
 df_clean=df.dropna(subset=['Salary'])
 df_clean
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/2b53fd56-b00f-41ca-ac05-92f9524c2bf7)
-# the row with complete missing value then the row get deleted
+# the row with complete missing value then the row get deleted:
 ```py
 df_clean_all=df.dropna(how='all')
 df_clean_all
 ```
 ## Output:
 ![image](https://github.com/user-attachments/assets/1a885ac7-1487-4ec2-8eae-002fb4ce9fee)
-# delete the row which contain one missing value
+# delete the row which contain one missing value:
 ```py
 df_cleaned_any=df.dropna(how='any')
 df_cleaned_any
@@ -172,7 +175,7 @@ sns.boxplot(data=dt['sepal_width'])
 sns.boxenplot(data=dt['sepal_width'])
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/9b38e306-eedf-4ce2-ac0a-3fd59aa156ea)
+![image](https://github.com/user-attachments/assets/a7e1aae1-2f2b-4226-b069-818a88564e7b)
 ```py
 sns.scatterplot(data=dt['sepal_width'])
 ```
